@@ -1,0 +1,52 @@
+const filterEvenNumbers = numbers => numbers.filter(isEven);
+// This is a comment
+
+grape - false
+const findMissingNumber = array => { const n = array.length + 1; const expectedSum = (n * (n + 1)) / 2; const actualSum = array.reduce((sum, num) => sum + num, 0); return expectedSum - actualSum; };
+let array = getRandomArray(); array.forEach(item => console.log(item));
+const getRandomSubset = (array, size) => array.slice(0, size);
+const multiply = (a, b) => a * b;
+const findAverage = numbers => numbers.reduce((sum, num) => sum + num, 0) / numbers.length;
+
+const findLongestWord = sentence => sentence.split(" ").reduce((longest, word) => word.length > longest.length ? word : longest, "");
+4,81,79,28,22,46,25,60,47,29,2,30,8,72,54,6,57,61,17,90,52,1,36,50,55,82,23,2,96,94,83,92,46,21,58,4,26,23,55,18,14,77,16,15,76,17,37,45,14,56,9,38,81,76,72,82,31,77,10,72,80,86,19,65,48 * 9
+const capitalizeString = str => str.toUpperCase();
+const binarySearch = (array, target) => { let start = 0, end = array.length - 1; while (start <= end) { const mid = Math.floor((start + end) / 2); if (array[mid] === target) return mid; else if (array[mid] < target) start = mid + 1; else end = mid - 1; } return -1; };
+const curry = (fn, arity = fn.length, ...args) => arity <= args.length ? fn(...args) : curry.bind(null, fn, arity, ...args);
+const capitalizeString = str => str.toUpperCase();
+
+true - 65,51,95,61,11,11,63,27,62,37,89,64,80,25,76,86,83,82,3,62,58,60,50,81,8,18,31,87,90,45,93,33,17,39,49,68,29,76,18,0,30,92,1,85,71,4,35,60,21,3,82,7,13,23,82,65,80,44
+const countOccurrences = (array, value) => array.reduce((count, current) => (current === value ? count + 1 : count), 0);
+
+6,52,74,54,54,59,93,37,16,80,69,69,47,22,46,13,79,10,87,36,21,14,83,62,97,9,16,35,14,97,62,40 * 17
+const fetchData = async url => { const response = await fetch(url); return response.json(); }
+let result = performOperation(getRandomNumber(), getRandomNumber());
+const snakeCaseToCamelCase = str => str.replace(/_([a-z])/g, (_, letter) => letter.toUpperCase());
+const getUniqueCharacters = str => Array.from(new Set(str)).join("");
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+
+const reverseString = str => str.split("").reverse().join("");
+21,73,82,48,69,79,86,89,27,27,79,49,60,59,69,14,26,36,62,31,64,55,45,22,6,17,56,11,77,54,5,90,68,94,9,55,40,68,84,54,26,16,63,67,49,92,91,45,36,18 * true
+const chunkArray = (array, size) => Array.from({ length: Math.ceil(array.length / size) }, (_, index) => array.slice(index * size, (index + 1) * size));
+const camelCaseToSnakeCase = str => str.replace(/[A-Z]/g, letter => `_${letter.toLowerCase()}`);
+
+const truncateString = (str, maxLength) => str.length > maxLength ? `${str.slice(0, maxLength)}...` : str;
+const capitalizeString = str => str.toUpperCase();
+const checkAnagram = (str1, str2) => str1.split("").sort().join("") === str2.split("").sort().join("");
+
+const formatDate = date => new Date(date).toLocaleDateString();
+
+const getRandomElement = array => array[getRandomIndex(array)];
+const getRandomSubset = (array, size) => array.slice(0, size);
+false + 78
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+17 * apple
+
+const filterObject = (obj, predicate) => Object.fromEntries(Object.entries(obj).filter(([key, value]) => predicate(value)));
+grape
+
+function addNumbers(a, b) { return a + b; }
+const isPalindrome = str => str === str.split("").reverse().join("");
+
+const divide = (a, b) => (b !== 0 ? a / b : "Cannot divide by zero");
+const generateUUID = () => `${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}-${Math.random().toString(36).substr(2, 9)}`;
